@@ -1,0 +1,135 @@
+/* General styles */
+body {
+    font-family: 'Lobster', cursive; /* Changed to Roboto for a modern look */
+    background-color: #e2f0f9; /* Soft background color */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2b7a9a; /* Dark teal header */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about, #courses, #contact {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #1e3d59;
+}
+#about, #courses, #contact {
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/* About styles */
+.about .box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.about .box.active {
+    background-color: #f0f8ff; /* Light blue background on active */
+}
+
+/* Courses styles */
+.courses .course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courses .course-box {
+    background: linear-gradient(135deg, #ff758c 30%, #ff7eb3 100%); /* Gradient background */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px; /* Rounded corners */
+    width: 220px; /* Slightly wider */
+    cursor: pointer;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.courses .course-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.courses .course-box.active {
+    background: linear-gradient(135deg, #6a11cb 30%, #2575fc 100%); /* Different gradient when active */
+}
+
+/* Footer styles */
+footer {
+    background-color: #2b7a9a; /* Dark teal footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles */
+footer p {
+    margin: 0;
+}
+
+.courses ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.courses ul li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
